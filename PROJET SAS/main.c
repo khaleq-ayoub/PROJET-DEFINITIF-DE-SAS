@@ -16,7 +16,7 @@ typedef struct {
 int analyse(mots m1[]){
     char texte[MAX_TEXT];
 
-    printf("entrer le texte pour couriger :\n");
+    printf("Enttrer votre texte :\n");
     fgets(texte , sizeof(texte) ,stdin);
     texte[strcspn(texte, "\n")] = '\0';// Supprime le saut de ligne à la fin du texte
     int le = strlen(texte);
@@ -82,7 +82,7 @@ void trie_Alpha(mots m2[] , int nbr_mot){
        }
     }
  }
-  printf("^^Le trie par alphabect ^^\n");
+  printf("Le trie par alphabect \n");
   affichage_les_mots(m2, nbr_mot);
 }
 void trie_Freq(mots m2[] , int nbr_mot){
@@ -95,7 +95,7 @@ void trie_Freq(mots m2[] , int nbr_mot){
         }
     }
  }
- printf("^^Le trie par frequence ^^\n");
+ printf("Le trie par frequence \n");
 affichage_les_mots(m2, nbr_mot);
 }
 void trie_long(mots m2[] , int nbr_mot){
@@ -108,7 +108,7 @@ void trie_long(mots m2[] , int nbr_mot){
         }
     }
  }
- printf("^^Le trier par longueur ^^\n");
+ printf("Le trier par longueur \n");
  affichage_les_mots(m2, nbr_mot);
  printf("_____________________________________\n");
 }
@@ -234,7 +234,7 @@ int main() {
     int choix;
 
     do {
-        printf("\n========= MENU PRINCIPAL =========\n");
+        printf("\n========= RESULTAT PRINCIPAL =========\n");
         printf("1. Afficher les mots\n");
         printf("2. Trier les mots\n");
         printf("3. Recherche exacte\n");
@@ -243,7 +243,7 @@ int main() {
         printf("0. Quitter\n");
         printf("Votre choix : ");
         scanf("%d", &choix);
-        getchar(); // Pour éviter les bugs avec fgets
+        getchar();
 
         switch (choix) {
             case 1:
@@ -265,7 +265,7 @@ int main() {
                 printf("Fin du programme.\n");
                 break;
             default:
-                printf("Choix invalide.\n");
+                printf("Choix non validie.\n");
         }
     } while (choix != 0);
 

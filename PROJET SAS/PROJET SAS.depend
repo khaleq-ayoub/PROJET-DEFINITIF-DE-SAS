@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1758201138 source:c:\users\pc\documents\projet definitif de sas\projet-definitif-de-sas\projet sas\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<ctype.h>
+
